@@ -6,23 +6,29 @@ const routes: Array<RouteRecordRaw> = [
     path: "/",
     alias: "/tutorials",
     name: "tutorials",
-    component: () => import("./components/TutorialsList.vue"),
+    component: () => import("./components/TutorialsList.vue")
   },
   {
     path: "/tutorials/:id",
     name: "tutorial-details",
-    component: () => import("./components/TutorialDetails.vue"),
+    component: () => import("./components/TutorialDetails.vue")
   },
   {
     path: "/add",
     name: "add",
-    component: () => import("./components/AddTutorial.vue"),
+    component: () => import("./components/AddTutorial.vue")
   },
+
+  {
+    path: "/test",
+    name: "test",
+    component: () => import("./components/DataTestComp.vue")
+  }
 ];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes
 });
 
 export default router;
