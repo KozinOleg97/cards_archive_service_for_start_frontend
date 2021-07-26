@@ -23,6 +23,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/test",
     name: "test",
     component: () => import("./components/DataTestComp.vue")
+  },
+  {
+    path: "/upload",
+    name: "upload",
+    component: () => import("./components/UploadFilesComp.vue")
   }
 ];
 
